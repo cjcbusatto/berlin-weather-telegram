@@ -1,5 +1,5 @@
 import Telegraf from 'telegraf';
-import '../env';
+import './env';
 import fetch from 'node-fetch';
 import OpenWeatherAPI from './interfaces/OpenWeatherAPI';
 const { OPEN_WEATHER_API_TOKEN, LOCATION, TELEGRAM_TOKEN, TELEGRAM_CHAT_ID } = process.env;
