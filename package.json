@@ -4,10 +4,17 @@
     "main": "index.js",
     "license": "MIT",
     "scripts": {
+        "start": "node ./dist/index.js",
         "build": "npm run lint && npm run build-ts",
         "build-ts": "tsc",
         "watch-ts": "tsc -w",
         "lint": "tsc --noEmit && eslint \"**/*.ts\" --quiet"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm build",
+            "pre-push": "npm build"
+        }
     },
     "dependencies": {
         "dotenv": "^8.2.0",
@@ -24,6 +31,7 @@
         "eslint": "^6.8.0",
         "eslint-config-prettier": "^6.9.0",
         "eslint-plugin-prettier": "^3.1.2",
+        "husky": "^3.1.0",
         "prettier": "^1.19.1",
         "ts-node": "^8.5.4",
         "typescript": "^3.7.4"
