@@ -1,0 +1,22 @@
+name: "Github Actions Berlin Weather Bot"
+
+on 
+    schedule:
+        - '0 7 * * *'
+
+jobs:
+    bot:
+        steps:
+            - name: 'Install node'
+              uses: actions/setup-node@v1
+            - name: 'Install NPM dependencies'
+              run: npm install
+            - name: 'Build application'
+              run: npm build
+            - name: 'Run application'
+              run: npm start
+              env:
+                OPEN_WEATHER_API_TOKEN: ${{ OPEN_WEATHER_API_TOKEN }}
+                TELEGRAM_TOKEN: ${{ TELEGRAM_TOKEN }}
+                TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}        
+                LOCATION: ${{ secrets.LOCATION }}
