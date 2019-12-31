@@ -16,7 +16,7 @@ jobs:
             - name: 'Run application'
               run: npm start
               env:
-                OPEN_WEATHER_API_TOKEN: ${{ OPEN_WEATHER_API_TOKEN }}
-                TELEGRAM_TOKEN: ${{ TELEGRAM_TOKEN }}
+                OPEN_WEATHER_API_TOKEN: ${{ secrets.OPEN_WEATHER_API_TOKEN }}
+                TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
                 TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}        
                 LOCATION: ${{ secrets.LOCATION }}
