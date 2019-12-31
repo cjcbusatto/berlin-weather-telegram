@@ -2,10 +2,11 @@ name: "Github Actions Berlin Weather Bot"
 
 on: 
     schedule:
-        - cron: '14 14 * * *'
+        - cron: '37 14 * * *'
 
 jobs:
     bot:
+        runs-on: ubuntu-latest
         steps:
             - name: 'Install node'
               uses: actions/setup-node@v1
