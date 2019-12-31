@@ -24,3 +24,7 @@ If you want to use it on a different location, simply follow the steps:
 
 7. Edit the `action.yml` to the desired time to receive the message. Github Actions works using UTC, therefore, you need to adapt the value to your timezone.
 8. Enjoy!
+
+## Acknowledgement
+
+This project is based on the Github Actions [video from BYTESIZED channel](https://www.youtube.com/watch?v=J4EhgEskSZA).  
