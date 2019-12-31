@@ -18,7 +18,7 @@ jobs:
             - name: 'Install NPM dependencies'
               run: npm install
             - name: 'Build application'
-              run: npm build
+              run: npm run build
             - name: 'Run application'
               run: npm start
               env:
