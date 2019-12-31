@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This bot sends a message everyday to me through Telegram informing the temperature of Berlin. The message is triggered by Github Actions everyday at 8am (CEST).
+This bot sends a message everyday to me through Telegram informing the temperature of Berlin. The message is triggered by Github Actions everyday around 7am (CEST).
 
 ## Usage
 
